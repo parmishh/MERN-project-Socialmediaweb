@@ -1,14 +1,14 @@
 export const TrendData= [
   {
-    name: "Minions",
+    name: "Javascript",
     shares: 97,
   },
   {
-    name: "Avangers",
+    name: "Angular",
     shares: 80.5,
   },
   {
-    name: "Zainkeepscode",
+    name: "MongoDb",
     shares: 75.5,
   },
   {
@@ -16,11 +16,11 @@ export const TrendData= [
     shares: 72,
   },
   {
-    name: "Elon Musk",
+    name: "Nodejs",
     shares: 71.9,
   },
   {
-    name: "Need for Speed",
+    name: "Web3",
     shares: 20,
   },
 ];
