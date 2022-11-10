@@ -112,8 +112,8 @@ const PostShare = () => {
         }
         alt="Profile"
       />
-      <div>
-        <input
+      <div >
+       <textarea
           type="text"
           placeholder="What's happening?"
           required

@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Posts.css";
 import { useParams } from "react-router-dom";
 
+
+
 const Posts = () => {
   const params = useParams()
   const dispatch = useDispatch();

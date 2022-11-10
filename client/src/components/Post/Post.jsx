@@ -6,11 +6,28 @@ import Heart from "../../img/like.png";
 import NotLike from "../../img/notlike.png";
 import { likePost } from "../../api/PostsRequests";
 import { useSelector } from "react-redux";
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { srcery } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { coy} from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { sunburst } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
+import prism from 'react-syntax-highlighter/dist/esm/styles/prism/prism';
+import javascript from 'react-syntax-highlighter/dist/esm/languages/prism/javascript';
+import css from 'react-syntax-highlighter/dist/esm/languages/prism/css';
+ 
+SyntaxHighlighter.registerLanguage('jsx', jsx);
+SyntaxHighlighter.registerLanguage('javascript', javascript);
+SyntaxHighlighter.registerLanguage('css', css);
+
+
 
 const Post = ({ data }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const [liked, setLiked] = useState(data.likes.includes(user._id));
   const [likes, setLikes] = useState(data.likes.length)
+  //let html = hljs.highlightAuto(data.desc)
 
   
   const handleLike = () => {
@@ -39,11 +56,20 @@ const Post = ({ data }) => {
       <span style={{ color: "var(--gray)", fontSize: "12px" }}>
         {likes} likes
       </span>
-      <div className="detail">
+      <div className="detail" >
         <span>
           <b>{data.name} </b>
         </span>
-        <span>{data.desc}</span>
+        
+        
+        <pre className="nn" ><SyntaxHighlighter className="nj" language={"javascript"} style={sunburst} showLineNumbers="true"  customStyle={{borderRadius: "3px"}}>{data.desc}</SyntaxHighlighter></pre>
+        
+       
+        
+       
+        
+        
+       
       </div>
     </div>
   );

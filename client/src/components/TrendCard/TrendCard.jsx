@@ -4,13 +4,13 @@ import {TrendData} from '../../Data/TrendData.js'
 const TrendCard = () => {
   return (
    <div className="TrendCard">
-       <h3>Trends for your</h3>
+       <h3>Documentations</h3>
 
 
        {TrendData.map((trend, id)=>{
             return(
                 <div className="trend" key={id}>
-                    <span>#{trend.name}</span>
+                    <a href={trend.link} className="new">#{trend.name}</a>
                     <span>{trend.shares}k shares</span>
                 </div>
             )

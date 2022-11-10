@@ -1,5 +1,6 @@
 .Post
 {
+   
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -20,3 +21,31 @@
     align-items: flex-start;
     gap: 1.5rem;
 }
+.nn{
+   /*height: 10rem;
+   width: 30rem;*/
+   height: fit-content;
+   width: fit-content;
+   
+   
+   
+   
+
+
+   
+}
+.nj{
+   
+    max-width: 35.5rem;
+    min-width:35rem;
+    height: fit-content;
+    width: fit-content;
+   
+ 
+    
+    
+    
+ 
+ 
+    
+ }
