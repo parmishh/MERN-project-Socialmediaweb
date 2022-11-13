@@ -134,12 +134,13 @@ const PostShare = () => {
             Video
           </div>
           <div className="option" style={{ color: "var(--location)" }}>
+            <a href="https://www.linkedin.com/in/paramjit-singh-19ba671ba/">
             <UilLocationPoint />
+            </a>
             Location
           </div>
           <div className="option" style={{ color: "var(--shedule)" }}>
-            <UilSchedule />
-            Shedule
+
           </div>
           <button
             className="button ps-button"

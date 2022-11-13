@@ -80,6 +80,64 @@ export const likePost = async (req, res) => {
   }
 };
 
+
+export const emoji = async (req, res) => {
+  const id = req.params.id;
+  const { userId } = req.body;
+  try {
+    const post = await PostModel.findById(id);
+    if (post.emojies.includes(userId)) {
+      await post.updateOne({ $pull: { emojies: userId } });
+      res.status(200).json("emoji disliked");
+    } else {
+      await post.updateOne({ $push: { emojies: userId } });
+      res.status(200).json("emoji liked");
+    }
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
+
+export const emoji1 = async (req, res) => {
+  const id = req.params.id;
+  const { userId } = req.body;
+  try {
+    const post = await PostModel.findById(id);
+    if (post.emojies1.includes(userId)) {
+      await post.updateOne({ $pull: { emojies1: userId } });
+      res.status(200).json("emoji1 disliked");
+    } else {
+      await post.updateOne({ $push: { emojies1: userId } });
+      res.status(200).json("emoji1 liked");
+    }
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Get timeline posts
 export const getTimelinePosts = async (req, res) => {
   const userId = req.params.id

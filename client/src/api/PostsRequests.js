@@ -13,3 +13,5 @@ API.interceptors.request.use((req) => {
 
 export const getTimelinePosts= (id)=> API.get(`/posts/${id}/timeline`);
 export const likePost=(id, userId)=>API.put(`posts/${id}/like`, {userId: userId})
+export const emoji=(id, userId)=>API.put(`posts/${id}/emojie`, {userId: userId})
+export const emoji1=(id, userId)=>API.put(`posts/${id}/emojie1`, {userId: userId})

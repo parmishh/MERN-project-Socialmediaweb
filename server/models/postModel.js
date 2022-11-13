@@ -5,6 +5,9 @@ const postSchema = mongoose.Schema(
     userId: { type: String, required: true },
     desc: {type: String, required : true},
     likes: [],
+    emojies:[],
+    emojies1:[],
+    
     createdAt: {
       type: Date,
       default: new Date(),

@@ -1,12 +1,16 @@
+
+
+
+
 :root {
-  --yellow: #f5c32c;
-  --orange: #fca61f;
+  --yellow: #04ac1a;
+  --orange: #1c8513;
   --black: #242d49;
   --gray: rgba(36, 45, 73, 0.65);
   --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
   --hrColor: #cfcdcd;
   --cardColor: rgba(255, 255, 255, 0.64);
-  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --buttonBg: linear-gradient(98.63deg, #04ac1a 0%, #e7f527 100%);
   --inputColor: rgba(40, 52, 62, 0.07);
   --photo: #4CB256;
   --video: #4A4EB7;
@@ -27,8 +31,26 @@
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #a6ddf0;
-  filter: blur(72px);
+  background: #e7f527;
+  filter: blur(75px);
+}
+
+.blur2 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background:#04ac1a;
+  filter: blur(100px);
+}
+
+.blur3 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #9dd5e2;
+  filter: blur(75px);
 }
 
 .button {

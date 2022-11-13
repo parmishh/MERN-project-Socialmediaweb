@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Auth.css";
 import Logo from "../../img/logo.png";
+import PYh1 from "../../img/PYh1.gif";
 import { logIn, signUp } from "../../actions/AuthActions.js";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -53,7 +54,7 @@ const Auth = () => {
       {/* left side */}
 
       <div className="a-left">
-        <img src={Logo} alt="" />
+        <img src={PYh1} alt="" />
 
         <div className="Webname">
           <h1>Parmish Media</h1>

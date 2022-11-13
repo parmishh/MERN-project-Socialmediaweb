@@ -1,6 +1,7 @@
 import React from "react";
 
 import Home from "../../img/home.png";
+import theme from "../../img/home.png";
 import vv from "../../img/video2.webp";
 import Noti from "../../img/noti.png";
 import Comment from "../../img/comment.png";
@@ -14,7 +15,10 @@ const NavIcons = () => {
       <Link to="../home">
         <img src={Home} alt="" />
       </Link>
-      <UilSetting />
+      
+     
+      
+      
       <a href="https://videocallweb-app.herokuapp.com/">
       <img src={vv} alt="" />
       </a>
