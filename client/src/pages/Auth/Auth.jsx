@@ -57,7 +57,7 @@ const Auth = () => {
         <img src={PYh1} alt="" />
 
         <div className="Webname">
-          <h1>Parmish Media</h1>
+          <h1>Code Media</h1>
           <h6>Explore the ideas throughout the world</h6>
         </div>
       </div>
