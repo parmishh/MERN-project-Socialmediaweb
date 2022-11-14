@@ -38,6 +38,7 @@ const Chat = () => {
     socket.current.emit("new-user-add", user._id);
     socket.current.on("get-users", (users) => {
       setOnlineUsers(users);
+    
     });
   }, [user]);
 

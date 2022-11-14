@@ -3,7 +3,9 @@ import "./Post.css";
 import {themes} from "../NavIcons/theme.js"
 import Comment from "../../img/comment.png";
 import Share from "../../img/share.png";
+import copy from "../../img/copy.png";
 import cloud from "../../img/cloud.png";
+import pencil from "../../img/pencil.png";
 import before from "../../img/before.gif";
 import after from "../../img/after.gif";
 import sad from "../../img/sad.png";
@@ -105,7 +107,7 @@ const Post = ({ data }) => {
               
 
               <img
-           src={emojied1 ? sad : sadgif}
+           src={emojied1 ? sad: sadgif}
            alt=""
            style={{ cursor: "pointer" }}
            onClick={handleemoji1}
@@ -122,10 +124,11 @@ const Post = ({ data }) => {
 
 
 
-
+         <a href="http://localhost:3000/chat">
         <img src={Comment} alt="" 
         
         />
+        </a>
         <img 
         src={Share} 
         alt="" 
@@ -146,6 +149,31 @@ const Post = ({ data }) => {
 
          />
          </a>
+         
+         <img src={pencil}></img>
+         
+        <textarea className="lk" id="kkk" spellcheck="false" >{data.desc}</textarea>
+
+        <img 
+        className="decrease"
+        src={copy} 
+        alt="" 
+        style={{ cursor: "pointer" }}
+        onClick={() => { navigator.clipboard.writeText(document.getElementById('kkk').value)} }
+        
+        
+
+        />
+        
+        
+
+       
+        
+        
+
+        
+        
+         
          
          
          
@@ -168,6 +196,8 @@ const Post = ({ data }) => {
 
       <span style={{ color: "var(--gray)", fontSize: "12px" }}>
         {likes} likes
+        
+        
       </span>
      
       

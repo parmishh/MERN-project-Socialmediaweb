@@ -15,7 +15,9 @@ const LogoSearch = () => {
   return (
     
     <div className="LogoSearch">
+      <a href="http://localhost:3000/home">
       <img src={PYh} alt="" />
+      </a>
       <div className="Search" >
           <input  type="search" id="poke"   placeholder="#Documentations" ></input>
             
