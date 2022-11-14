@@ -23,7 +23,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { srcery } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { dark} from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { sunburst } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
+import {CommentList,CommentForm,CommentBox} from "../comment/Comment";
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 import prism from 'react-syntax-highlighter/dist/esm/styles/prism/prism';
@@ -211,7 +211,8 @@ const Post = ({ data }) => {
         
        
         
-       
+        <CommentBox/>
+        <CommentList/>
         
         
        
