@@ -1,44 +1,61 @@
-# MERN-project-Socialmediaweb
 
-#REACT
-# Getting Started with Create React App
+#Team Members
+    - Paramjit Singh
+    - Ardhi Dattatreya Varma
+    - Pratik Ranjan Sau
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Problem Statement 
+ -**D3h01** - Platform for sharing and flexing code screenshots / snippets where users can like and comment on posts. Users have to post code snippets that they wrote and liked and other users can see who all have posted their snippets. The snippets should be in text form(can be copied) and not screenshots/photos with syntax highlighting.
+        - Share snippets option and page for each snippet
+        - Give reactions and suggest edits to the shared snippets
 
-## Available Scripts
+# Features :- 
+ -  New User Sign Up
+ -  Can Share Code snippets or screenshots
+ -  Edit Code
+ -  Reply and Suggest Edits for the code snippet
+ -  Can directly message a user for more information
+ -  Can Video Call a user
+ -  Can view code snippets of the user's followers
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/755/datas/original.PNG)
 
-In the project directory, you can run:
+# Our Approach And Implementation 
 
-### `npm start`
+## User Authorisation -
+- Implemented jwt tokens.
+- Current user is stored in the redux store and the data of the user is stored in the database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/756/datas/original.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Post 
+- New post creation
+- One can like or provide emojis and the state is stored in redux. Also updated in the database simultaneously.
+- Comment option is provided
+- Code is highlighted using prism.js npm package which supports 100+ languages.
+- Code can be edited and shared from the post directly
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/753/datas/original.PNG)
 
-### `npm test`
+## Direct Messaging 
+-  Implemented using socket.io
+- Provides online status of the users and emojis can be sent as well
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/757/datas/original.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##WebRTC Implementation 
+-  Implemented VideoCalling
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/758/datas/original.PNG)
 
-### `npm run build`
+#DataBase Models for satisfaction
+**UserModel**
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/751/datas/original.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**ChatsModel**
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/752/datas/original.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**PostModel**
+![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/752/datas/original.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
+#Challenges Faced 
+- We took it upon ourselves to use MongoDB as an option in this project. Many new concepts and mistakes were made and corrected. 
+- Many bugs appeared during this project and sleepless nights were spent inorder to deliver this project.
+- We wanted to more features but were bound by time.Still we have tried to add as many features as we can.
+- Integrating backend and frontend was a challenge for us . Recreating scenarios in Postman API is easy but passing down the props in complex nested structure is a pain in the forehead.
