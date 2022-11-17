@@ -36,15 +36,6 @@
 -  Implemented VideoCalling
 ![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/758/datas/original.PNG)
 
-#DataBase Models for satisfaction
 
-**UserModel**
-![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/751/datas/original.PNG)
-
-**ChatsModel**
-![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/754/datas/gallery.jpg)
-
-**PostModel**
-![link](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/296/752/datas/original.PNG)
 
 
