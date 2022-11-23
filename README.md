@@ -1,6 +1,4 @@
 
-
-
 # Features :- 
  -  New User Sign Up
  -  Can Share Code snippets or screenshots
